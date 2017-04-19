@@ -1,5 +1,5 @@
 class String
   def palindream
-    self.reverse == self
+    self.downcase.reverse == self.downcase
   end
 end
