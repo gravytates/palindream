@@ -9,4 +9,8 @@ describe("String#palindream") do
   it('accounts for different cases of capitalization') do
     expect(("Mom").palindream()).to(eq(true))
   end
+
+  it('informs the user whether a sentence is a palindrome') do
+    expect(("Lepers repel").palindream()).to(eq(true))
+  end
 end

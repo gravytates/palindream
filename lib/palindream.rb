@@ -1,5 +1,5 @@
 class String
   def palindream
-    self.downcase.reverse == self.downcase
+    self.downcase.delete("^a-z").reverse == self.downcase.delete("^a-z")
   end
 end
