@@ -13,4 +13,8 @@ describe("String#palindream") do
   it('informs the user whether a sentence is a palindrome') do
     expect(("Lepers repel").palindream()).to(eq(true))
   end
+
+  it('accounts for and ignores punctuation') do
+    expect("A man, A plan, A canal -- Panama".palindream).to(eq(true))
+  end
 end
